@@ -1,0 +1,22 @@
+VPS_NAME = "all"
+RARITY = { "OG", "Secret", "Admin", "Taco" }
+MIN_GEN = 10_000_000
+INCLUDE = { 
+    ["Tralalero Tralala"] = { OPERATOR = ">=", VALUE = 1_200_000 },
+    ["Los Tungtungtungcitos"] = { OPERATOR = ">=", VALUE = 5_000_000 },
+    ["Los Tralaleritos"] = { OPERATOR = ">=", VALUE = 5_000_000 },
+    ["Las Tralaleritas"] = { OPERATOR = ">=", VALUE = 6_500_000 },
+    ["Chicleteira Bicicleteira"] = { OPERATOR = ">=", VALUE = 3_500_000 },
+    ["Job Job Job Sahur"] = { OPERATOR = ">=", VALUE = 7_000_000 },
+    ["Secret Lucky Block"] = { OPERATOR = ">=", VALUE = 5_000_000 },
+    ["Admin Lucky Block"] = { OPERATOR = ">=", VALUE = 9_000_000 },
+    ["Taco Lucky Block"] = { OPERATOR = ">=", VALUE = 4_000_000 },
+    ["Los Lucky Blocks"] = { OPERATOR = ">=", VALUE = 10_000_000 },
+}
+DOMAIN="serverhop.estevao1098.com"
+KEY="JBbj396z2XDTGn1c0Pipomr8hVR4teCK"
+
+repeat
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2161a63865bf69c5bcc712986eddff10.lua"))()
+    task.wait(30)
+until getgenv().isLoaded
